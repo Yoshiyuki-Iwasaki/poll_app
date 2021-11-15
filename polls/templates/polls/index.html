@@ -1,7 +1,9 @@
-<h1>poller</h1>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
-
+<h1>poller</h1>
+{% if user.is_authenticated %}
+<p>{{ user.get_username }}</p>
+{% endif %}
 <h2>投票一覧</h2>
 {% if latest_question_list %}
     <ul>
