@@ -1,4 +1,4 @@
-# django_tutorial
+# poll_app
 url:
 
 ## 使用技術
